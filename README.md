@@ -18,3 +18,7 @@ Please note:
 >Similarly, admins can use "/del_warp <name>" to remove warps, and they don't have to be on a planet to do so.
 >
 >All users can do "/warp" to view a list of set warps, and "/warp <name>" to go to one of the planets free of charge. Currently it starts moving your ship to that planet and instantly warps you down, but I'm looking for a way to keep a player's ship where it is. The plugin has been tested and definitely works the way it should. Also, I suggest protecting a planet before making a warp to it.
+
+## [StarryPy Server Status](https://bitbucket.org/zvorgan/starrypy-server-status/)
+>Server status plugin available here. You can send query on specified port (specified in server_status.py) and plugin return status (online/offline) and number of players.
+>Also include small php script for embed this in your website.
