@@ -1,4 +1,5 @@
 import json
+from functools import wraps
 from base_plugin import BasePlugin
 
 class PermissionManagerPlugin(BasePlugin):
@@ -7,6 +8,11 @@ class PermissionManagerPlugin(BasePlugin):
     def activate(self):
         self.can_save = False
         super(PermissionManagerPlugin, self).activate()
+        try:
+            with open("core_plugins/permission_manager/players.json") as f:
+                self.players = json.load(f)
+        except:
+            self.players = []
         try:
             with open("core_plugins/permission_manager/groups.json") as f:
                 self.groups = json.load(f)
@@ -28,13 +34,7 @@ class PermissionManagerPlugin(BasePlugin):
             self.setgroupparent("OWNER", "ADMIN")
             self.addgroupperm("OWNER", "*")
             self.can_save = True
-            self.players = []
             self.save()
-        try:
-            with open("core_plugins/permission_manager/players.json") as f:
-                self.players = json.load(f)
-        except:
-            self.players = []
     
     def after_connect_response(self, data):
         player = self.protocol.player.uuid
@@ -164,7 +164,7 @@ def perm(perm=""):
         func.perm = perm
         @wraps(func)
         def wrapped_function(self, *args, **kwargs):
-            if self.playerhasperm(self.protocol.player.uuid, perm):
+            if self.permission_manager.playerhasperm(self.protocol.player.uuid, perm):
                 return func(self, *args, **kwargs)
             else:
                 self.protocol.send_chat_message("You don't have permission to do that.")
