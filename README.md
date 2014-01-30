@@ -10,7 +10,7 @@ Please note:
 
 # Plugins:
 
-## [Planet Warps for StarryPy](https://github.com/MrMarvin/StarryPy_plugins/blob/master/plugins/planet_warps_for_starrypy.py)
+## [Hexicube's Planet Warps for StarryPy](https://github.com/MrMarvin/StarryPy_plugins/blob/master/plugins/hexicube_planet_warps_for_starrypy.py)
 
 > Currently it conflicts with /warp from warpy because really that should be called /tp due to what it does. If you want to use this with warpy at the same time, you'll have to change one of them to work around the other.
 >
@@ -22,3 +22,6 @@ Please note:
 ## [StarryPy Server Status](https://bitbucket.org/zvorgan/starrypy-server-status/)
 >Server status plugin available here. You can send query on specified port (specified in server_status.py) and plugin return status (online/offline) and number of players.
 >Also include small php script for embed this in your website.
+
+## [Hexicube's Permission Manager](https://github.com/MrMarvin/StarryPy_plugins/blob/master/plugins/hexicube_permission_manager.py)
+> A permission manager with group based permission levels
