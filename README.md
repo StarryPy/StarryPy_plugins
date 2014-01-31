@@ -22,6 +22,3 @@ Please note:
 ## [StarryPy Server Status](https://bitbucket.org/zvorgan/starrypy-server-status/)
 >Server status plugin available here. You can send query on specified port (specified in server_status.py) and plugin return status (online/offline) and number of players.
 >Also include small php script for embed this in your website.
-
-## [Hexicube's Permission Manager](https://github.com/MrMarvin/StarryPy_plugins/blob/master/plugins/hexicube_permission_manager.py)
-> A permission manager with group based permission levels
