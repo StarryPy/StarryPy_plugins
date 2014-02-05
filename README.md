@@ -16,6 +16,9 @@ Please note:
 ## [Maffi's uptime plugin](https://github.com/MrMarvin/StarryPy_plugins/blob/master/plugins/uptime)
 > Very simple plugin that responds to /uptime with the time StarryPy is running.
 
+## [teihoo's /me emote plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/emotes)
+> Very simple plugin that adds /me <emote> command to StarryPy.
+
 ## [Hexicube's Planet Warps for StarryPy](https://github.com/MrMarvin/StarryPy_plugins/blob/master/plugins/hexicube_planet_warps_for_starrypy.py)
 
 > Currently it conflicts with /warp from warpy because really that should be called /tp due to what it does. If you want to use this with warpy at the same time, you'll have to change one of them to work around the other.
