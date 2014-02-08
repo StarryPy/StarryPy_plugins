@@ -19,6 +19,25 @@ Please note:
 ## [teihoo's /me emote plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/emotes)
 > Very simple plugin that adds /me <emote> command to StarryPy.
 
+## [mdeneen's Pushover plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/pushover_plugin)
+> This adds basic support for [Pushover](https://pushover.net) messages. Right now it can:
+
+> - Send a pushover message to a mobile device whenever a player joins
+> - Avoid sending notifications for ignored players.
+> Pushover supports delivery groups, so one could send messages to multiple users. This can be useful when running a private server so that you know when other players are online.
+
+### Add the following block to your config file:
+
+> ```"pushover_plugin": {
+    "api_key": "MY_API_KEY",
+    "ignored_players": 
+        "Player1",
+    ],
+    "user_key": "MY_USER_KEY"
+}
+>```
+
+
 ## [Hexicube's Planet Warps for StarryPy](https://github.com/MrMarvin/StarryPy_plugins/blob/master/plugins/hexicube_planet_warps_for_starrypy.py)
 
 > Currently it conflicts with /warp from warpy because really that should be called /tp due to what it does. If you want to use this with warpy at the same time, you'll have to change one of them to work around the other.
