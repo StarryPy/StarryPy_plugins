@@ -36,6 +36,8 @@ Please note:
   }
 >```
 
+## [teihoo's /players plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/players)
+> Very simple plugin that adds /players command, which is an alias for the existing /who command, to StarryPy.
 
 ## [mdeneen's Pushover plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/pushover_plugin)
 > This adds basic support for [Pushover](https://pushover.net) messages. Right now it can:
@@ -49,7 +51,7 @@ Please note:
 > ```
 "pushover_plugin": {
     "api_key": "MY_API_KEY",
-    "ignored_players": 
+    "ignored_players":
         "Player1",
     ],
     "user_key": "MY_USER_KEY"
