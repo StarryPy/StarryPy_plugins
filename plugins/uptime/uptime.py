@@ -23,7 +23,7 @@ class UptimePlugin(SimpleCommandPlugin):
     def uptime(self, data_):
         now = datetime.utcnow()
         delta = now - self.started_at
-        self.protocol.send_chat_message("%d:%d  up %d days, %d:%d, %d users" % (
-            now.hour, now.minute, delta.days, (delta.seconds / 3600) % 3600, (delta.seconds / 60) % 60,
+        self.protocol.send_chat_message( "<" + now.strftime("%H:%M") + "> Uptime: %d day(s), %d hour(s), %d min(s), %d user(s)" % (
+            delta.days, (delta.seconds / 3600) % 3600, (delta.seconds / 60) % 60,
             len(self.player_manager.who()))
         )
