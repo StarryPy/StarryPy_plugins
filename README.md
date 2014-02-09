@@ -28,7 +28,8 @@ Please note:
 
 ### Add the following block to your config file:
 
-> ```"pushover_plugin": {
+> ```
+"pushover_plugin": {
     "api_key": "MY_API_KEY",
     "ignored_players": 
         "Player1",
