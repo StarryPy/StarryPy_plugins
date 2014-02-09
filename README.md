@@ -19,6 +19,9 @@ Please note:
 ## [teihoo's /me emote plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/emotes)
 > Very simple plugin that adds /me <emote> command to StarryPy.
 
+## [teihoo's /players plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/players)
+> Very simple plugin that adds /players command, which is an alias for the existing /who command, to StarryPy.
+
 ## [mdeneen's Pushover plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/pushover_plugin)
 > This adds basic support for [Pushover](https://pushover.net) messages. Right now it can:
 
