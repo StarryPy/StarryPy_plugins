@@ -19,6 +19,24 @@ Please note:
 ## [teihoo's /me emote plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/emotes)
 > Very simple plugin that adds /me <emote> command to StarryPy.
 
+## [teihoo's /starteritems plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/starteritems)
+> Adds /starteritems command which can be used once per player and will give player a set of predefined starter items
+> It is ment to work along with new_player_greeter_plugin, and will give a different set, that's why:
+
+### Add the following block to your config file:
+
+>```
+"starteritems_plugin": {
+    "auto_activate": true,
+    "items": [
+    [ "coalore", 100 ],
+    [ "money", 1000 ]
+    ],
+    "message": "You were given a set of starter items ;)"
+  }
+>```
+
+
 ## [mdeneen's Pushover plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/pushover_plugin)
 > This adds basic support for [Pushover](https://pushover.net) messages. Right now it can:
 
@@ -37,7 +55,6 @@ Please note:
     "user_key": "MY_USER_KEY"
 }
 >```
-
 
 ## [Hexicube's Planet Warps for StarryPy](https://github.com/MrMarvin/StarryPy_plugins/blob/master/plugins/hexicube_planet_warps_for_starrypy.py)
 
