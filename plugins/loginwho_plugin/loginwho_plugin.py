@@ -1,21 +1,20 @@
 # -*- coding: UTF-8 -*-
 from base_plugin import BasePlugin
-from core_plugins.player_manager import PlayerManager
+from plugins.core.player_manager import permissions
 
 class LoginWhoPlugin(BasePlugin):
     """
     Displays a /who upon login
     """
     name = "loginwho_plugin"
+    depends = ["command_dispatcher", "user_management_commands"]
     auto_activate = True
 
     def activate(self):
         super(LoginWhoPlugin, self).activate()
-        self.player_manager = PlayerManager(self.config)
+        self.user_commands = self.plugins['user_management_commands']
 
     def after_connect_response(self, data):
-        self.send_who()
+        self.user_commands.who(data)
 
-    def send_who(self):
-        who = [w.colored_name(self.config.colors) for w in self.player_manager.who()]
-        self.protocol.send_chat_message("%d other players online: %s" % (len(who), ", ".join(who)))
+        
