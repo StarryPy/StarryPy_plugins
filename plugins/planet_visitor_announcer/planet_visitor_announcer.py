@@ -19,6 +19,6 @@ class PlanetVisitorAnnouncer(BasePlugin):
             reactor.callLater(1, self.announce_on_planet, self.protocol.player)
 
     def announce_on_planet(self, who_beamed):
-        self.factory.broadcast_planet("%s beamed down to your planet" % who_beamed.colored_name(self.config.colors))
+        self.factory.broadcast_planet("%s beamed down to your planet" % who_beamed.colored_name(self.config.colors), planet=self.protocol.player.planet)
 
 
