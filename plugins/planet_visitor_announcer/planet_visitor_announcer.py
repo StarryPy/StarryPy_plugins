@@ -15,7 +15,6 @@ class PlanetVisitorAnnouncer(BasePlugin):
     def after_warp_command(self, data):
         w = warp_command().parse(data.data)
         if w.warp_type == "WARP_DOWN" or w.warp_type == "WARP_HOME":
-            print "before later: I (%s) am on: %s" % (self.protocol.player.name, self.protocol.player.planet)
             reactor.callLater(1, self.announce_on_planet, self.protocol.player)
 
     def announce_on_planet(self, who_beamed):
