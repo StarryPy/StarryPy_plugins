@@ -10,6 +10,26 @@ Please note:
 
 # Plugins:
 
+## [slitherrr's IRC plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/irc_plugin)
+> This plugin will connect to the specified server and join the specified target (if it's a channel), and echo messages to that target.
+>
+> Note that it currently doesn't support multiple channels, but doing so is fairly trivial and it'll probably be added soon.
+### Add the following block to your config file:
+
+>```
+"irc": {
+            "auto_activate": false,
+            "bot_nickname": "StarryPy",
+            "channel": "!!REPLACE ME!!",
+            "echo_from_channel": true,
+            "nickserv_password": "!!REPLACE ME!!",
+            "port": 6667,
+            "server": "irc.freenet.org",
+            "color": "^#495449;"
+        },
+>```
+
+
 ## [SloanReynolds /who on login](https://github.com/MrMarvin/StarryPy_plugins/blob/master/plugins/loginwho_plugin)
 > Displays a /who upon login
 
