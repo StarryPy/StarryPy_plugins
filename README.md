@@ -59,6 +59,15 @@ Please note:
 ## [teihoo's /players plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/players)
 > Very simple plugin that adds /players command, which is an alias for the existing /who command, to StarryPy.
 
+## [teihoo's bookmarks plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/bookmarks)
+> Adds the following commands and abilities to the server:
+> ```
+@permissions(UserLevels.GUEST)  #everything works for all users
+/bookmark <name>  #creates a personal bookmark of the planet (need to be on planet)
+/goto <name>      #moves ship to the bookmarked planet (need to be on ship)
+/remove <name>    #removes a bookmark (need to be on planet)
+> ```
+
 ## [mdeneen's Pushover plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/pushover_plugin)
 > This adds basic support for [Pushover](https://pushover.net) messages. Right now it can:
 
