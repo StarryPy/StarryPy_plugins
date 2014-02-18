@@ -71,7 +71,7 @@ class PlanetWarps(SimpleCommandPlugin):
             for warp in self.planet_warps:
                 if warps != "":
                     warps.append(warp[1])
-            warpnames = " ".join(warps)
+            warpnames = "^shadow,green;, ^shadow,yellow;".join(warps)
             self.protocol.send_chat_message("List of PoI's: ^shadow,yellow;"+warpnames)
             return
 
