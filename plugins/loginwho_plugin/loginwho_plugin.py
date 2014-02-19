@@ -16,5 +16,3 @@ class LoginWhoPlugin(BasePlugin):
 
     def after_connect_response(self, data):
         self.user_commands.who(data)
-
-        
