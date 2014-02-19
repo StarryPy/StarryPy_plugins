@@ -1,0 +1,1 @@
+from nma_plugin import NotifyMyAndroid

@@ -102,3 +102,30 @@ Please note:
 ## [StarryPy Server Status](https://bitbucket.org/zvorgan/starrypy-server-status/)
 >Server status plugin available here. You can send query on specified port (specified in server_status.py) and plugin return status (online/offline) and number of players.
 >Also include small php script for embed this in your website.
+
+## [traxo-xx's Notify My Android plugin](https://github.com/StarryPy/StarryPy_plugins/tree/master/plugins/nma_plugin)
+> If activated, this plugin will send a notification to your [Notify My Android](https://www.notifymyandroid.com/) account.
+
+### Add the following block to your config file:
+
+> ```javascript
+        "nma_plugin": {
+            "api_application": "StarryPy Server",
+            "api_event": "Player joined",
+            "api_key": "API_KEY",
+            "api_priority": "0",
+            "auto_activate": true,
+            "ignored_players": [
+                "Player"
+            ]
+        },
+>```
+
+> **api_application**: Name of the application the notification will come from.
+>
+> **api_event**: Subject of the notification.
+>
+> **ignored_players**: The plugin will not send a notification when a player in this list joins the server.
+>
+> The other parameters are pretty self-explanatory
+
