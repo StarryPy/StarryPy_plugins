@@ -122,7 +122,10 @@ Please note:
 >```
 
 > **api_application**: Name of the application the notification will come from.
+>
 > **api_event**: Subject of the notification.
+>
 > **ignored_players**: The plugin will not send a notification when a player in this list joins the server.
+>
 > The other parameters are pretty self-explanatory
 
