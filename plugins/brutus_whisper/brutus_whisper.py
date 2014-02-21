@@ -28,8 +28,6 @@ class BRWhisperPlugin(SimpleCommandPlugin):
             self.protocol.send_chat_message(self.whisper.__doc__)
             return
         try:
-            #targetName = " ".join(data[:-1])
-            #message = data[-1]
             targetName, message = extract_name(data)
             if not message:
                 self.protocol.send_chat_message("Invalid message!")
@@ -74,14 +72,11 @@ class BRWhisperPlugin(SimpleCommandPlugin):
             strTo = "To: %s" % targetPlayer.colored_name(self.config.colors)
             self.protocol.send_chat_message(strMsgTo)
 
-            #show target the message
-            #for protocol in self.factory.protocols.itervalues():
-            #    if protocol.player.name == target:
-                    #send the message
+            #show target the message            
             protocol = self.factory.protocols[targetPlayer.protocol]
             strMsgFrom = "[From: %s^#00FF00;] %s" % (self.protocol.player.colored_name(self.config.colors), message)
             strFrom = "From: %s" % self.protocol.player.colored_name(self.config.colors)
-            protocol.send_chat_message(strMsgFrom)
+            protocol.send_chat_message(strMsgFrom)            
 
             #store your last sent history, so the other player can reply
             #store your name using your target's name as key, so he can use his name to find you
@@ -94,13 +89,10 @@ class BRWhisperPlugin(SimpleCommandPlugin):
                     if sspy_player.access_level >= UserLevels.ADMIN and value == True:
                         protocol = self.factory.protocols[sspy_player.protocol]
                         protocol.send_chat_message("^#00FFFF;[SS]^#00FF00;[%s %s^#00FF00;] %s" % (strFrom, strTo, message))           
-                    
-            #targetPlayer.protocol.send_chat_message(("[From: %s^#00FF00;] %s") % (self.protocol.player.colored_name(self.config.colors), message))
-  
+
     @permissions(UserLevels.ADMIN)
     def socialspy(self, data):
         """Enables the viewing of messages sent by other players. Syntax: /socialspy [on|off]"""
-        #self.protocol.send_chat_message(_("This feature has not been implemented yet!"))
         if len(data) == 0:
             self.protocol.send_chat_message(self.socialspy.__doc__)
         val = " ".join(data)
