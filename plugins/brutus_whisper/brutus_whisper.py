@@ -1,8 +1,8 @@
 #===========================================================
 #   BRWhisperPlugin
-#   Author: FZFalzar of Brutus.SG Starbound
+#   Author: FZFalzar/Duck of Brutus.SG Starbound (http://steamcommunity.com/groups/BrutusSG)
 #   Version: v0.1
-#   Description: A better whisper plugin with reply and SocialSpy
+#   Description: A better whisper plugin with reply and SocialSpy 
 #===========================================================
 
 from base_plugin import SimpleCommandPlugin
