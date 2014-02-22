@@ -46,9 +46,9 @@ Please note:
 >```
 
 ## [FZFalzar's /afk plugin](https://github.com/FZFalzar/StarryPy_plugins/tree/afk_plugin/plugins/afk_plugin)
-> Simple plugin that allows players to set their status via /afk
-> Player will be automatically unmarked from AFK if they chat or interact with any entity
-> Currently does not allow auto-afk or un-afk upon player movement due to API deficiency
+> Simple plugin that allows players to set their status via /afk.
+> Player will be automatically unmarked from AFK if they chat or interact with any entity (doors, chests etc).
+> Currently does not allow auto-afk or un-afk upon player movement due to API deficiency.
 >```
 @permissions(UserLevels.GUEST)
 /afk							#Enables/disables AFK status
