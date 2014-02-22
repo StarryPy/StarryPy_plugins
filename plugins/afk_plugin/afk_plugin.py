@@ -31,7 +31,6 @@ class AFKCommand(SimpleCommandPlugin):
                 self.protocol.send_chat_message("Initiating with default values...")
             self.afk_message = "^gray;is now AFK."
             self.afkreturn_message = "^gray;has returned."
-            self.interval = 30
 
     @permissions(UserLevels.GUEST)
     def afk(self, data):
